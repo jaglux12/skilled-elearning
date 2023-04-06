@@ -1,0 +1,170 @@
+/* 
+    Diseño para tablets
+*/
+@media (min-width: 780px) {
+    
+    header{
+        padding: 0 2.5rem;
+    }
+
+    main{
+        align-items: center;
+        display: flex;
+        height: 580px;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-top: 3rem;
+        position: relative;
+        padding-left: 2.5rem;
+    }
+
+    main div h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    main div{
+        height: 284px;
+        width: 398px;
+    }
+
+    main figure{
+        position: static;
+    }
+
+    main figure img{
+        content: url("../assets/img/image-hero-tablet@2x.webp");
+        position: absolute;
+        right: -220px;
+        top: -50px;
+        width: 540px;
+    }
+
+    section{
+        grid-row-gap: 3.5rem;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2.5rem;
+        padding-bottom: 3rem;
+    }
+    section h2{
+        align-items: start;
+        font-size: 24px;
+        height: 259px;
+        margin: 0;
+        margin-top: auto;
+        padding-top: 3rem;
+    }
+    section div{
+        height: 259px;
+        margin: 0;
+        margin-top: auto;
+    }
+
+    footer{
+        padding: 0 2.5rem;
+    }
+}
+
+/* 
+    Diseño para escritorio intermedio. 
+    Lo creé ya que los elementos de la etiqueta main adquirían un gran espacio entre ellos.
+    Eso hacía que exista mucho espacio entre los elementos y la imagen se me estirara mucho.
+*/
+
+@media (min-width: 1300px){
+
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 7.25rem;
+        padding-bottom: 7.2rem;
+    }
+    
+}
+
+/* 
+    Diseño para escritorio activo
+*/
+
+@media (min-width: 1440px){
+
+    body{
+        padding: 0;
+    }
+
+    header{
+        padding: 0 11%;
+        padding-top: 1.5rem;
+        position: absolute;
+        top: 10;
+        width: 100%;
+        z-index: 10;
+    }
+
+    main{
+        align-items: center;
+        height:711px;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        bottom: 0;
+    }
+
+    main figure img{
+        content: url("../assets/img/image-hero-desktop.webp");
+        right: -210px;
+        top: -50px;
+        width: 791px;
+    }
+
+    main div h1{
+        font-size: 3.5rem;
+    }
+
+    main div{
+        align-self: center;
+        padding: 0;
+        width: 457px;
+        height: 359px;
+    }
+
+    main div h1{
+        margin-bottom: 3rem;
+    }
+
+    main div p{
+        margin-bottom: 2.5rem;
+    }
+
+    main div button{
+        font-size: 18px;
+        height: 63px;
+        width: 167px;
+    }
+
+    main div p{
+        font-size: 18px;
+    }
+
+    section{
+        grid-row-gap: 0rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 7.25rem;
+        padding-bottom: 7.75rem;
+    }
+
+    section h2{
+        margin: 0;
+        margin-top: 0;
+    }
+
+    section div{
+        margin: 0;
+        margin-top: auto;
+        padding-top: 1.9rem;
+    }
+
+    footer{
+        padding: 0 7.25rem;
+    }
+}
