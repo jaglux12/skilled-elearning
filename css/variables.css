@@ -1,0 +1,13 @@
+:root{
+    --Light-violet: #666CA3;
+    --Dark-violet: #13183F;
+
+    --Gray: #83869A;
+    --Light-pink: #FFA7C3;
+    --Dark-pink: #F74780;
+
+    --White: #FFFFFF;
+    --Degraded-0: linear-gradient(#FFFFFF,#f1e7fe);
+    --Degraded-1: linear-gradient(#F02AA6, #FF6F48);
+    --Degraded-2: linear-gradient(#4851FF,#F02AA6);
+}

@@ -3,3 +3,259 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Clases */
+.button-rounded{
+    width: 140px;
+    height: 48px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--White);
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+}
+
+body{
+    padding: 1rem 0rem 0rem 0rem;
+    background-color: var(--White);
+}
+
+header{
+    display: flex;
+    height: 48px;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+body header button{
+    background-color: var(--Dark-violet);
+}
+
+main
+{
+    padding: 0 1rem 0 1rem;
+    width: 375px;
+    margin: 0 auto;
+}
+
+main h1{
+    color: var(--Dark-violet);
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 1.2rem;
+}
+
+main p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-right: 1.7rem;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--Gray);
+    margin-bottom: 1.8rem;
+}
+
+main button{
+    height: 56px;
+    width: 167px;
+    background-image: var(--Degraded-1);
+    margin-bottom: 3rem;
+}
+
+main figure{
+    display: flex;
+    justify-content: center;
+    height: 301px;
+    width: 327px;
+}
+
+main figure img{
+    transform: scale(1.3);
+    display: block;
+}
+
+section{
+    background-image: var(--Degraded-0);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: end;
+}
+
+section h2{
+    background-image: var(--Degraded-1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 1.7rem;
+    color: var(--White);
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    width: 343px;
+    height: 120px;
+}
+
+section div{
+    padding: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    width: 343px;
+    height: 283px;
+    justify-content: space-around;
+    margin-bottom: 2.5rem;
+    background-color: var(--White);
+    border-radius: 10px;
+    position: relative;
+}
+
+section div h3{
+    color: var(--Dark-violet);
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+section div p{
+    color: var(--Gray);
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+section div:first-of-type{
+    margin-top: 2.5rem;
+}
+
+section div figure{
+    position: absolute;
+    top: 0;
+    margin-top: -8%;
+}
+
+section div a{
+    background-color: transparent;
+    border: none;
+    font-family: 'Plus Jakarta Sans',sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--Dark-pink);
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: var(--Dark-violet);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+footer button{
+    background-image: var(--Degraded-2);
+}
+
+
+@media (min-width: 780px) {
+    
+    header{
+        padding: 0 2.5rem;
+    }
+
+    main{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2.5rem;
+        margin-bottom: 6.1rem;
+    }
+
+    main div{
+        width: 398px;
+    }
+
+    section{
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    section h2{
+        height: 259px;
+        align-items: start;
+        padding-top: 3rem;
+        font-size: 24px;
+    }
+    section div{
+        height: 259px;
+    }
+    footer{
+        padding: 0 2.5rem;
+    }
+
+    main figure img{
+        content: url("../assets/img/image-hero-tablet@2x.webp");
+        transform: scale(1.9);
+        margin-right: -100%;
+        margin-top: -25%;
+        background-color: transparent;
+    }
+    section div:first-child{
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1300px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 7.25rem;
+    }
+}
+
+@media (min-width: 1440px){
+    header{
+        padding: 0 7.25rem;
+        margin-bottom: 12.75rem;
+    }
+    footer{
+        padding: 0 7.25rem;
+    }
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 7.25rem;
+        padding-bottom: 7.75rem;
+        grid-gap: 2rem;
+    }
+    main figure img{
+        content: url("../assets/img/image-hero-desktop.webp");
+        transform: scale(2.8);
+        margin-right: -50%;
+        margin-top: -30%;
+        background-color: transparent;
+    }
+    main div h1{
+        font-size: 3.5rem;
+    }
+    main{
+        padding: 0 7.25rem;
+        margin-bottom: 10rem;
+    }
+    main div{
+        width: 457px;
+        height: 459px;
+    }
+    main div p{
+        font-size: 18px;
+    }
+}
+
